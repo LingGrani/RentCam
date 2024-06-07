@@ -26,6 +26,20 @@ body {
     -o-transition: background 0.2s ease;
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4c6baf; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 a {
     text-decoration: none;
     color: var(--color);
@@ -214,3 +228,4 @@ h1 {
         -o-transform: scale(1);
     }
 }
+

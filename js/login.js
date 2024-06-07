@@ -53,5 +53,5 @@ const displayThemeButtons = () => {
 displayThemeButtons();
 
 function goToFile() {
-    window.location.href = 'index.html'; // replace 'file.html' with your target file
+    window.location.href = 'main.html';
 }
