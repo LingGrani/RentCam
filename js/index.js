@@ -84,3 +84,104 @@ products.forEach(product => {
   // Tambahkan markup produk ke dalam div produk-list
   productList.innerHTML += productHTML;
 });
+
+//
+const bestseller = [
+  {
+      img: 'img/kamera13.jpg',
+      name: 'Kamera Canon',
+      rating: 4,
+      price: 'Rp.200.000 / 4 Jam'
+  },
+  {
+      img: 'img/speaker2.jpg',
+      name: 'Speaker',
+      rating: 4,
+      price: 'Rp.200.000 / Hari'
+  },
+  {
+      img: 'img/mic12.jpg',
+      name: 'Microphone',
+      rating: 4,
+      price: 'Rp.100.000 / Hari'
+  },
+  {
+      img: 'img/paket1.jpg',
+      name: 'Paket Lengkap Kamera',
+      rating: 4,
+      price: 'Rp.500.000 / Hari'
+  },
+  {
+      img: 'img/paket2.jpg',
+      name: 'Paket Lengkap Kamera',
+      rating: 4,
+      price: 'Rp.500.000 / Hari'
+  },
+  {
+      img: 'img/kamera3.jpg',
+      name: 'Kamera',
+      rating: 4,
+      price: 'Rp.250.000 / 4 Jam'
+  },
+  {
+      img: 'img/setup.jpg',
+      name: 'Paket Lengkap Microphone',
+      rating: 4,
+      price: 'Rp.200.000 / Hari'
+  },
+  {
+      img: 'img/setup2.jpg',
+      name: 'Paket Lengkap Microphone',
+      rating: 4,
+      price: 'Rp.200.000 / Hari'
+  },
+  {
+      img: 'img/kamera1.jpg',
+      name: 'Kamera',
+      rating: 4,
+      price: 'Rp.200.000 / 4 Jam'
+  },
+  {
+      img: 'img/speaker4.jpg',
+      name: 'Speaker',
+      rating: 4,
+      price: 'Rp.200.000 / Hari'
+  }
+];
+
+const Bestseller = document.getElementById('bestseller');
+
+products.forEach(product => {
+  const productHTML = `
+      <div class="col-lg-6 col-xl-4">
+          <div class="p-4 rounded bg-light">
+              <div class="row align-items-center">
+                  <div class="col-6">
+                      <img src="${product.img}" class="img-fluid rounded-circle w-100" alt="">
+                  </div>
+                  <div class="col-6">
+                      <a href="#" class="h5">${product.name}</a>
+                      <div class="d-flex my-3">
+                          ${generateStars(product.rating)}
+                      </div>
+                      <h4 class="mb-3">${product.price}</h4>
+                      <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  `;
+  Bestseller.innerHTML += productHTML;
+});
+
+function generateStars(rating) {
+  let stars = '';
+  for (let i = 0; i < 5; i++) {
+      if (i < rating) {
+          stars += '<i class="fas fa-star text-primary"></i>';
+      } else {
+          stars += '<i class="fas fa-star"></i>';
+      }
+  }
+  return stars;
+}
