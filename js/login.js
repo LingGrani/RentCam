@@ -52,14 +52,14 @@ const displayThemeButtons = () => {
 
 displayThemeButtons();
 
-function goToFile() {
-    window.location.href = 'main.html';
-}
-
 function submitForm() {
     var us = document.getElementById("username").value;
-  
-    var message = "Login menggunakan Username: " + us;
-  
-    alert(message);
-  }
+    var pass = document.getElementById("password").value;
+
+    if (us === "admin" && pass === "admin") {
+        window.location.href = "admin.html";
+    } else {
+        window.location.href = "index.html";
+    }
+    return;
+}
