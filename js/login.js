@@ -55,3 +55,11 @@ displayThemeButtons();
 function goToFile() {
     window.location.href = 'main.html';
 }
+
+function submitForm() {
+    var us = document.getElementById("username").value;
+  
+    var message = "Login menggunakan Username: " + us;
+  
+    alert(message);
+  }
