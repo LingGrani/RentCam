@@ -9,3 +9,7 @@ function submitForm() {
 
   alert(message);
 }
+
+function loginForm() {
+  window.location.href = 'login.html';
+}

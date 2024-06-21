@@ -212,10 +212,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: 1429 Netus Rd, NY 48247</p>
-                            <p>Email: Example@gmail.com</p>
-                            <p>Phone: +0123 4567 8910</p>
-                            <p>Payment Accepted</p>
+                            <p>Dhimas Aditya P 20200140118</p>
+                            <p>Luthfi Angger R.20220140137</p>
+                            <p>M. Ikram Riza 20220140107</p>
+                            <p>M. Wahyu Rizki Adnan 20220140101</p>
                             <img src="img/payment.png" class="img-fluid" alt="">
                         </div>
                     </div>
