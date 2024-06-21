@@ -95,5 +95,5 @@ function submitForm() {
 }
 
 // Attach event listeners to buttons (assuming buttons have specific IDs)
-document.getElementById("loginButton").addEventListener("click", loginForm);
+document.getElementById("loginButton").addEventListener("click", validateLogin);
 document.getElementById("registerButton").addEventListener("click", validateRegister);
